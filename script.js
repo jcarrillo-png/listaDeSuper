@@ -23,3 +23,17 @@ let noHabia = listaDeSuper.pop();
 let comprado = listaDeSuper.shift();
 
 console.log(listaDeSuper.length);
+
+function logItems(arreglo) {
+    arreglo.forEach((producto, indice)=> {
+        console.log('${indice}: ${producto}');
+    });
+}
+
+console.log("Lista de supermercado:");
+logItems(listaDeSuper)
+
+let listalimpieza = ("lavandina", "detergente", "jabon blanco");
+
+console.log("Lista limpieza:");
+logItems(listalimpieza)
